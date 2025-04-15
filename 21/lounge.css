@@ -1,0 +1,83 @@
+body {
+  font-size: small;
+  font-family: Verdana, Helvetica, Arial;
+  line-height: 1.6em;
+}
+
+h1, h2 {
+  color: #007e7e;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+p,h1,body{
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.guarantee {
+  border-color: white;
+  border-width: 1px;
+  border-style: dashed;
+  background-color: #a7cece;
+  padding: 25px;
+  margin: 30px;
+  line-height: 1.9em;
+  font-family: Georgia, 'Times New Roman';
+  font-style: italic;
+  color: #444444;
+  background-image: url(images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 25px;
+  padding-left: 80px;
+  margin-right: 250px;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+
+.drinks {
+  border-width: thin;
+  border-style: solid;
+  border-color: #007e7e;
+  width: 200px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  background-image: url(images/cocktail.gif);
+  background-repeat: repeat-x;
+  text-align: center;
+  float: right;
+}
+
+.cd{
+  font-style: italic;
+}
+
+.artist{
+  font-weight: bold;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a {
+  text-decoration-line: none;
+}
