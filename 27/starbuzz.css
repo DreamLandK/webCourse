@@ -6,7 +6,7 @@ body {
 }
 
 
-.header {
+.top {
   background-color: #675c47;
   height: 108px;
   margin: 10px 10px 0px 10px;
@@ -20,7 +20,7 @@ body {
   padding: 15px;
 }
 
-.sidebar {
+aside {
   background: #efe5d0 url(images/background.gif) bottom right;
   font-size: 105%;
   display: table-cell;
@@ -28,7 +28,7 @@ body {
   padding: 15px;
 }
 
-.footer {
+footer {
   background-color: #675c47;
   color: #efe5d0;
   text-align: center;
@@ -78,4 +78,37 @@ div.tableRow {
   padding: 15px;
   display: table-cell;
   vertical-align: top;
+}
+
+.award {
+  position: fixed;
+  top: 10px;
+  left: 45%;
+  animation: rotate 1s linear infinite;
+}
+
+.coupon {
+  position: fixed;
+  top: 350px;
+  left: -210px;
+  transition: left 0.5s ease;
+}
+
+.coupon a,
+img {
+  border: none;
+}
+
+.coupon:hover {
+  left: 0px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
