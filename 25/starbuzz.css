@@ -1,0 +1,79 @@
+body {
+  background-color: #b5a789;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+  margin: 0px;
+}
+
+
+.header {
+  background-color: #675c47;
+  height: 108px;
+}
+
+.main {
+  background: #efe5d0 url(images/background.gif) top left;
+  font-size: 105%;
+  display: table-cell;
+  vertical-align: top;
+  padding: 15px;
+}
+
+.sidebar {
+  background: #efe5d0 url(images/background.gif) bottom right;
+  font-size: 105%;
+  display: table-cell;
+  vertical-align: top;
+  padding: 15px;
+}
+
+.footer {
+  background-color: #675c47;
+  color: #efe5d0;
+  text-align: center;
+  padding: 15px;
+  font-size: 90%;
+  clear: right;
+}
+
+h1 {
+  font-size: 120%;
+  color: #954b4b;
+}
+
+.slogan {
+  color: #954b4b;
+}
+
+.beanheading {
+  text-align: center;
+  line-height: 1.8em;
+}
+
+a:link {
+  color: #b76666;
+  text-decoration: none;
+  border-bottom: thin dotted #b76666;
+}
+
+a:visited {
+  color: #675c47;
+  text-decoration: none;
+  border-bottom: thin dotted #675c47;
+}
+
+div.tableContainer {
+  display: table;
+  border-spacing: 10px;
+}
+
+div.tableRow {
+  display: table-row;
+}
+
+.drinks {
+  background-color: #efe5d0;
+  padding: 15px;
+  display: table-cell;
+  vertical-align: top;
+}
