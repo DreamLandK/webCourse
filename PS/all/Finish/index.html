@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>PlayStation 公式サイト | 本体・ゲームタイトル・周辺機器</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="SONY_logo">
+      <a href="https://www.sony.com/ja/"><img src="image_ad/SONYlogo.png" alt="SONY" /></a>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><img src="image_ad/PlayStation_logo.jpg" alt="PlayStation" /></li>
+      <li><a href="">ゲーム</a></li>
+      <li><a href="">PS5</a></li>
+      <li><a href="">PS4</a></li>
+      <li><a href="">サービス</a></li>
+      <li><a href="">周辺機器</a></li>
+      <li><a href="">最新情報</a></li>
+      <li><a href="">購入</a></li>
+      <li><a href="">サポート</a></li>
+      <li class="PlayStation_account"><a href="">サインイン</a></li>
+      <li class="search"><img src="image_ad/search.png" alt="search" /></li>
+    </ul>
+  </nav>
+
+  <section class="ad">
+    <div class="image">
+      <img src="image_ad/botton.png" alt="botton" class="botton" />
+      <img src="image_ad/75%.png" alt="75%sale" class="sale-banner" />
+
+      <div class="text-group" style="position: relative; left: 50px">
+        <h1>GWはゲーム三昧!</h1>
+        <p>
+          今年のGWはゲームを満喫。見逃せないタイトルや追加コンテンツが最大75%OFF。
+        </p>
+        <p class="purchase-button">今すぐ購入</p>
+      </div>
+    </div>
+
+    <div class="list" style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          transform: translateY(-200px);
+        ">
+      <button class="item_sale">
+        <img src="image_ad/sale.png" alt="item_sale" tabindex="0" />
+      </button>
+
+      <button class="item_hunter">
+        <img src="image_ad/hunter.png" alt="item_hunter" tabindex="0" />
+      </button>
+
+      <button class="item_battle-field">
+        <img src="image_ad/battle-field.png" alt="item_battle-field" tabindex="0" />
+      </button>
+
+      <button class="item_genshin">
+        <img src="image_ad/genshin.png" alt="item_genshin" tabindex="0" />
+      </button>
+
+      <button class="item_oblivion">
+        <img src="image_ad/OBLIVION.png" alt="item_oblivion" tabindex="0" />
+      </button>
+
+      <button class="item_PS5_second">
+        <img src="image_ad/PS5_second.png" alt="item_PS5_second" tabindex="0" />
+      </button>
+    </div>
+  </section>
+
+  <div class="allcontent">
+    <div class="ps5">
+      <div class="ps5content">
+        <h1>PS5の本体と周辺機器をご紹介</h1>
+        <h2>PlayStation 5本体</h2>
+        <p>新世代の驚きに満ちたPlayStationタイトルを体験しよう。</p>
+        <a href="">詳細を見る</a>
+        <a href="">ラインナップを見る</a>
+      </div>
+      <img src="image2/ps5.png" alt="PS5" />
+    </div>
+
+    <!--<div class="ps5pro">
+            <div class="ps5procontent">
+                <h1>PS5の本体と周辺機器をご紹介</h1>
+                <h2>PlayStation 5 Pro本体</h2>
+                <p>PlayStation史上かつてない目をみはるようなビジュアルでPS5のゲームをお楽しみください。</p>
+                <a>詳細を見る</a>
+            </div>
+            <img src="image2/ps5 pro.png" alt="PS5 PRO">
+        </div>-->
+
+    <div class="bottom">
+      <div class="allbotton">
+        <button class="botton"><img src="image2/ps5.png" alt="ps5" /></button>
+        <button class="botton">
+          <img src="image2/ps5 pro.png" alt="ps5 pro" />
+        </button>
+        <button class="botton">
+          <img src="image2/DualSense.png" alt="DualSense" />
+        </button>
+        <button class="botton">
+          <img src="image2/PlayStation Portal.png" alt="PlayStation Portal" />
+        </button>
+        <button class="botton">
+          <img src="image2/PULSE Elite.png" alt="PULSE Elite" />
+        </button>
+        <button class="botton">
+          <img src="image2/PULSE Explore.png" alt="PULSE Explore" />
+        </button>
+        <button class="botton">
+          <img src="image2/DualSense.png" alt="DualSense" />
+        </button>
+        <button class="botton">
+          <img src="image2/Access.png" alt="Access" />
+        </button>
+        <button class="botton">
+          <img src="image2/ps5 2.png" alt="PS5用カバー" />
+        </button>
+        <button class="botton">
+          <img src="image2/ykq.png" alt="メディアリモコン" />
+        </button>
+        <button class="botton">
+          <img src="image2/HDカメラ.png" alt="HDカメラ" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="part3_main">
+    <!-- Tab 按钮 -->
+    <div class="tab-container">
+      <button class="tab active" onclick="switchTab('tab1')">新作ゲームタイトル</button>
+      <button class="tab" onclick="switchTab('tab2')">発売予定のゲームタイトル</button>
+    </div>
+
+    <!-- 卡片容器 -->
+    <div id="cardContainer" class="card-container">
+      <!-- 卡片将通过 JS 动态插入 -->
+    </div>
+
+    <script>
+      // 定义两组卡片数据（每组14张）
+      const cards = {
+        tab1: [
+          { src: 'images/1.jpg', title: 'モンスターハンターワイルズ' },
+          { src: 'images/2.jpg', title: 'Winning Post 10 2025' },
+          { src: 'images/3.jpg', title: '餓狼伝説 City of the Wolves SPECIAL' },
+          { src: 'images/4.jpg', title: 'ファンタジーライフ グルグルの竜と…' },
+          { src: 'images/5.jpg', title: 'LUNAR リマスターコレクション' },
+          { src: 'images/6.jpg', title: 'ワンダラー：運命の欠片' },
+          { src: 'images/7.jpg', title: 'サガ フロンティア２ リマスター PS4 ...' },
+          { src: 'images/8.jpg', title: 'Venus Vacation PRISM - DEAD OR ...' },
+          { src: 'images/9.jpg', title: 'The First Berserker: Khazan' },
+          { src: 'images/10.jpg', title: 'Days Gone Remastered' },
+          { src: 'images/11.jpg', title: 'Forza Horizon 5' },
+          { src: 'images/12.jpg', title: 'DOOM: The Dark Ages' },
+          { src: 'images/13.jpg', title: 'The Midnight Walk' },
+          { src: 'images/14.jpg', title: '『インディ・ジョーンズ/大いなる円環』' }
+        ],
+        tab2: [
+          { src: 'images/20.jpg', title: 'Elden Ring Nightreign' },
+          { src: 'images/21.jpg', title: '戦場のフーガ3' },
+          { src: 'images/32.jpg', title: 'RAIDOU Remastered: 超力兵団奇...' },
+          { src: 'images/23.jpg', title: 'シャドウラビリンス' },
+          { src: 'images/24.jpg', title: 'スーパーロボット大戦Y' },
+          { src: 'images/25.jpg', title: 'Baby Steps' },
+          { src: 'images/26.jpg', title: 'Little Nightmares III' },
+          { src: 'images/27.jpg', title: 'ソニックレーシング クロスワールド' },
+          { src: 'images/28.jpg', title: 'Lost Soul Aside™' },
+          { src: 'images/29.jpg', title: 'Ghost of Yōtei' },
+          { src: 'images/30.jpg', title: 'Marathon' },
+          { src: 'images/31.jpg', title: 'Metal Gear Solid Delta: Snake Eater' },
+        ]
+      };
+
+      function switchTab(tab) {
+        const container = document.getElementById('cardContainer');
+        container.innerHTML = ''; // 清空当前内容
+
+        // 更新 Tab 的激活状态
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(t => t.classList.remove('active'));
+        document.querySelector(`.tab[onclick*="${tab}"]`).classList.add('active');
+
+        cards[tab].forEach(card => {
+          const div = document.createElement('div');
+          div.className = 'card';
+          div.innerHTML = `
+          <img src="${card.src}" alt="">
+          <div class="card-title">${card.title}</div>
+      `;
+          // 添加鼠标进入和离开事件监听器
+          div.querySelector('img').addEventListener('mouseenter', () => {
+            // 当鼠标进入图片区域时，将其他所有卡片设置为dimmed
+            document.querySelectorAll('.card').forEach(c => {
+              if (c !== div) c.classList.add('dimmed');
+            });
+          });
+          div.querySelector('img').addEventListener('mouseleave', () => {
+            // 当鼠标离开图片区域时，移除所有卡片上的dimmed类
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('dimmed'));
+          });
+          container.appendChild(div);
+        });
+      }
+
+      // 默认加载第一个 tab 的内容
+      switchTab('tab1');
+    </script>
+  </div>
+
+  <div class="box">
+    <main>
+      <div class="b1">
+        <div class="b2">
+          <img src="img/heng.png" alt="" />
+          <h2>PlayStation Plus へよう二そ</h2>
+          <p>
+            ゲ-ムをもっと自由に。新しい、好きなゲ-ムと出会えるPlayStationのサプスク。
+          </p>
+        </div>
+        <div class="b4">
+          <div class="b3">
+            <div class="b31">
+              <div class="d32">
+                <img style="width: 250px" src="img/6.svg" alt="" />
+              </div>
+              <p class="p1">PlayStation Plus プレミアム</p>
+              <p>
+                PlayStationの世代を超えた懐かしの名作が遊べる「クラシックスカタ
+              </p>
+              <p>ログ」ほか、すべてのサ-ビスをご利用いただけます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="b5">
+          <div class="b51">
+            <button>詳細を見る</button>
+          </div>
+        </div>
+      </div>
+      <div class="b9">
+        <div class="b91">
+          <p style="font-size: 35px">PlayStationの30年</p>
+          <p>
+            30周年を記念して、PlayStationの歷史と数々のゲ-ム機本体やゲ-ムを巡る「思い出」を公開中。ぜひ-緒にお祝いしましよう!
+          </p>
+          <div class="b93">
+            <div class="b94">
+              <button>お祝いに参加する</button>
+            </div>
+            <div class="b94">
+              <button>思い出を振り返る</button>
+            </div>
+          </div>
+        </div>
+        <div class="b92">
+          <img src="img/3.webp" alt="" />
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="part5_main">
+    <span class="information">
+      <h1>4月のPLAYSTATION</h1>
+      <p>今月のPlayStation注目トピックスをお届けします。</p>
+    </span>
+    <img src="image5/section5_main.png" alt="section5_main" />
+  </div>
+
+  <div class="part5_content">
+    <button class="part5_section1">
+      <img src="image5/section5_1.png" alt="section5_1" />
+      <p>新作ゲームタイトル</p>
+      <p>
+        『Days Gone
+        Remastered』を始めとした、今月の新作ゲームタイトルをチェックしましょう。
+      </p>
+    </button>
+
+    <button class="part5_section">
+      <img src="image5/section5_2.png" alt="section5_2" />
+      <p>新作インディーズタイトル</p>
+      <p>
+        『Forever
+        Skies』を始め、今月発売の斬新で独創的なインディーズタイトルをチェックしましょう。
+      </p>
+    </button>
+
+    <button class="part5_section">
+      <img src="image5/section5_3.png" alt="section5_3" />
+      <p>最新アップデート</p>
+      <p>
+        『Call of Duty:
+        Warzone』のシーズン3を始めとする、今月の注目イベントをチェックしましょう。
+      </p>
+    </button>
+    <div class="part5_bottom">
+      <a href="">詳細を見る</a>
+    </div>
+  </div>
+
+  <div class="part6_title">
+    <h1>PlayStation.Blogの最新ニュース</h1>
+  </div>
+
+  <div class="part6_botton">
+    <button class="part6_section1">
+      <img src="images_pt6/jiguang.jpg" alt="jiguang" />
+      <h5>
+        『Destiny
+        2』の今後一年間のコンテンツである「予言の年」を公開。ふたつの拡張コンテンツや、アップデートなどについてお届け!
+      </h5>
+      <p>
+        『Destiny 2』の今後一年間のコンテンツである「予言の年」を公開！
+        ふたつの拡張コンテンツ「運命の境界」と「反逆」についての詳細や、ゲームプレイの改善、大規模アップデートなどについてお届け！
+      </p>
+    </button>
+
+    <button class="part6_section">
+      <img src="images_pt6/men.jpg" alt="men" />
+      <h5>
+        PS5®『マフィア：オリジン
+        ～裏切りの祖国』が8月8日（金）発売決定。ディレクターが最新のゲームプレイトレーラーを徹底解説！
+      </h5>
+      <p>
+        PS5®『マフィア：オリジン ～裏切りの祖国』が8月8(金)発売決定！
+        ディレクターが最新トレーラーを徹底解説。「マフィア」シリーズの精神はそのままに、進化したゲームプレイや、手に汗握るアクションについてお届!
+      </p>
+    </button>
+
+    <button class="part6_section">
+      <img src="images_pt6/hai.jpg" alt="hai" />
+      <h5>
+        『DEATH STRANDING 2: ON THE BEACH』 小島秀夫監督インタビュー！
+        現代の世界情勢を受けて変化した作品テーマ“繋がり”
+      </h5>
+      <p>
+        6月26日（木）発売予定のPlayStation®5用ソフトウェア『DEATH STRANDING 2:
+        ON THE BEACH（デス・ストランディング 2：
+        オン・ザ・ビーチ）』は、『DEATH STRANDING』 […]
+      </p>
+    </button>
+  </div>
+
+  <div class="news_header">
+    <div class="news1">
+      <h1>メール登録して最新情報を入手</h1>
+      <span>
+        <a href="https://www.playstation.com/ja-jp/" class="link-with-arrow">詳細を見る</a>
+      </span>
+      <img src="images_pt6/news1.png" alt="phone" />
+    </div>
+
+    <div class="news2">
+      <h1>PSNのアカウントとLINE連携のご案内</h1>
+      <span>
+        <a href="https://www.playstation.com/ja-jp/local/line-linking-account/" class="link-with-arrow">詳細を見る</a>
+      </span>
+      <img src="images_pt6/news2.png" alt="information" />
+    </div>
+
+    <div class="news3">
+      <h1>お持ちの機器について質問がございますか？</h1>
+      <span>
+        <a href="https://www.playstation.com/ja-jp/support/" class="link-with-arrow">詳細を見る</a>
+      </span>
+      <img src="images_pt6/news3.png" alt="playstation" />
+    </div>
+  </div>
+
+  <div>
+    <h1 class="part7_title">SNSでフォローする</h1>
+
+    <section class="SocialMedia">
+      <a href="https://x.com/PlayStation_jp"><img src="image_pt7/x.png" alt="x" /></a>
+      <a href="https://www.facebook.com/PlayStationJapan"><img src="image_pt7/facebook.png" alt="facebook" /></a>
+      <a href="https://www.youtube.com/user/playstationjp"><img src="image_pt7/youtube.png" alt="youtube" /></a>
+      <a href="https://www.instagram.com/playstation_jp/"><img src="image_pt7/ins.png" alt="instagram" /></a>
+      <a href="https://line.me/R/ti/p/@playstation?from=page&openQrModal=true&searchId=playstation"><img
+          src="image_pt7/line.png" alt="line" /></a>
+    </section>
+
+    <section class="SocialMedia_2">
+      <a href="https://x.com/AskPS_JP"><img src="image_pt7/support.png" alt="support" /></a>
+      <a href="https://x.com/tornev"><img src="image_pt7/duck.png" /></a>
+    </section>
+  </div>
+
+  <div>
+    <h1 class="title_2">ソニーグループからのお知らせ</h1>
+
+    <section class="sale">
+      <a href="https://sonybank.jp/products/sbw/sie/"><img src="image_pt7/visa.png" /></a>
+      <a href="https://www.playstation.com/ja-jp/editorial/nuro-hikari/"><img src="image_pt7/robot.png" /></a>
+    </section>
+
+    <section class="sale_2">
+      <a href="https://www.sony.jp/bravia/game/?s_tc=jp_gp_sce_braviagame_20210610"><img
+          src="image_pt7/tv_and_ps5.png" /></a>
+    </section>
+  </div>
+
+  <div class="footer-content">
+    <img class="MARVEL" src="image_pt7/marvel.png" alt="marvel" />
+
+    <p class="MARVEL_content_first">
+      ©2024 Columbia Pictures Industries, Inc. and TSG Entertainment II LLC
+      All Rights Reserved. MARVEL and all related character names: © & TM 2024
+      MARVEL.
+    </p>
+
+    <p class="MARVEL_content_first">©2022 MARVEL</p>
+
+    <p class="MARVEL_content_first">
+      ©2022 Sony Interactive Entertainment LLC.Developed by Insomniac Games,
+      Inc.
+    </p>
+  </div>
+
+  <div class="part7_footer">
+    <section>
+      <img class="part7_PlayStation_Logo" src="image_pt7/playstation_logo.png" alt="PlayStation_Logo" />
+    </section>
+
+    <hr class="centered-line" />
+
+    <div class="jump">
+      <span class="jump_1">
+        <nav class="jump_list">
+          <ul>
+            <li class="little_title">
+              <h3>概要</h3>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/corporate/about-us/">SIEについて</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/corporate/playstation-careers/">採用情報</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/corporate/playstation-studios/">PlayStation Studios</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/playstation-productions/">PlayStation Productions</a>
+            </li>
+            <li>
+              <a href="https://sonyinteractive.com/en/">会社情報</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/en-hk/playstation-history/1994-ps-one/">PlayStationの歴史</a>
+            </li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="jump_2">
+        <nav class="jump_list">
+          <ul>
+            <li>
+              <h3 class="little_title">製品</h3>
+            </li>
+            <li><a href="https://www.playstation.com/ja-jp/ps5/">PS5</a></li>
+            <li><a href="https://www.playstation.com/ja-jp/ps4/">PS4</a></li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/ps-vr2/">PS VR2</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/ps-plus/">PS Plus</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/accessories/">周辺機器</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/ps5/games/">ゲーム</a>
+            </li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="jump_3">
+        <nav class="jump_list">
+          <ul>
+            <li>
+              <h3 class="little_title">価値観</h3>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/corporate/playstation-and-the-environment/">環境</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/accessibility/">アクセシビリティ</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/privacy-security-safety/">オンラインセーフティー</a>
+            </li>
+            <li>
+              <a href="https://sonyinteractive.com/jp/impact/diversity-and-beyond/">ダイバーシティの推進</a>
+            </li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="jump_4">
+        <nav class="jump_list">
+          <ul>
+            <li>
+              <h3 class="little_title">サポート</h3>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/support/">サポートハブ</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/support/safety/">PlayStation Safety</a>
+            </li>
+            <li>
+              <a href="https://status.playstation.com/">PSNのステータス</a>
+            </li>
+            <li>
+              <a href="https://repairs.playstation.com/s/?locale=en-hk&language=en_HK">オンライン修理受付サービス</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/support/account/password-reset-psn/">パスワードリセット</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/support/hardware/manuals/">ハードウェアの取扱説明書</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/support/contact-us/">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="jump_5">
+        <nav class="jump_list">
+          <ul>
+            <li>
+              <h3 class="little_title">リソース</h3>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/legal/psn-terms-of-service/">PlayStation Network 利用規約</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/legal/about-playstation-store/">PlayStation Store について</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/legal/playstation-store-cancellation-policy/">PS
+                Storeキャンセルポリシー</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/legal/ratings/">年齢別レーティング</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/legal/health-warning/">健康のためのご注意</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/legal/copyright-and-trademark-notice/">知的財産の表記</a>
+            </li>
+            <li>
+              <a href="https://www.playstation.com/ja-jp/support/account/psn-safety-parents-guide/">保護者の皆様へ</a>
+            </li>
+            <li>
+              <a href="https://partners.playstation.net/">Publisher & Developer Relations</a>
+            </li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="jump_6">
+        <nav class="jump_list">
+          <ul>
+            <li>
+              <h3 class="little_title">オフィシャルアカウント</h3>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/PlayStationJapan"><img src="image_pt7/facebook_2.png"
+                  alt="facebook" /></a>
+            </li>
+            <li>
+              <a href="https://x.com/PlayStation_jp"><img src="image_pt7/x_2.png" alt="x" /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/accounts/suspended/?next=https%3A%2F%2Fwww.instagram.com%2Fplaystation_jp%2F%3F__coig_ufac%3D1#"><img
+                  src="image_pt7/ins_2.png" alt="instagram" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/user/playstationjp"><img src="image_pt7/youtube_2.png"
+                  alt="youtube" /></a>
+            </li>
+            <li>
+              <a href="https://line.me/R/ti/p/@playstation?from=page">LINE</a>
+            </li>
+            <li>
+              <a href="https://apps.apple.com/us/app/playstation-app/id410896080">iOSアプリ</a>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.scee.psxandroid&utm_source=pdcexploreapp&pli=1">Androidアプリ</a>
+            </li>
+          </ul>
+        </nav>
+      </span>
+    </div>
+
+    <hr class="centered-line" />
+
+    <div class="trademark">
+      <img src="image_pt7/sony_interactive.png" alt="Sony Interactive Entertainment" />
+      <p class="trademark_content_first">
+        ©2025 Sony Interactive Entertainment Inc. All Rights Reserved.
+      </p>
+      <p class="trademark_content">
+        全コンテンツ、ゲームタイトル、商号および/または製品形状、トレードマーク、アートワーク、関連する画像は、それぞれの所有者の商標および/または著作物です。All
+        rights reserved.<a class="detailed"
+          href="https://www.playstation.com/en-hk/legal/copyright-and-trademark-notice/">詳細</a>
+      </p>
+    </div>
+
+    <hr class="centered-line" />
+
+    <div class="language">
+      <img src="image_pt7/earth.png" alt="earth" />
+      <a href="https://www.playstation.com/ja-jp/">
+        <p>日本 ></p>
+      </a>
+      <span class="jump_last">
+        <a href="https://www.playstation.com/ja-jp/legal/">リーガルポータル</a>
+        <a href="https://www.playstation.com/ja-jp/legal/privacy-policy/">プライバシーポリシー</a>
+        <a href="https://www.playstation.com/ja-jp/legal/website-terms-of-use/">ウェブサイト利用規約</a>
+        <a href="https://www.playstation.com/en-hk/site-map/">サイトマップ</a>
+      </span>
+    </div>
+  </div>
+
+</body>
+
+</html>

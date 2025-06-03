@@ -1,0 +1,125 @@
+h1 {
+  font-size: 55px;
+  left: 300px;
+  top: 100px;
+}
+
+h2 {
+  margin-bottom: 0px;
+  color: rgb(37, 94, 202);
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(83, 83, 83);
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+
+.ps5content {
+  position: absolute;
+  margin: 50px 0px 0px 70px;
+  width: 500px;
+}
+
+.ps5 > img {
+  position: relative;
+  left: 700px;
+  width: 50%;
+  height: auto;
+}
+
+.ps5content > a {
+  margin: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  padding: 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  background-color: rgba(0, 104, 189, 1);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.ps5content > a:hover {
+  outline: 2px solid rgba(0, 104, 189, 1);
+  outline-offset: 2px;
+}
+
+.ps5procontent {
+  position: absolute;
+  margin: 100px 0px 0px 300px;
+  width: 700px;
+}
+
+.ps5pro > img {
+  position: relative;
+  left: 1050px;
+  width: 50%;
+  height: auto;
+}
+
+.ps5procontent > a {
+  margin: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  padding: 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  background-color: rgba(0, 104, 189, 1);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.ps5procontent > a:hover {
+  outline: 2px solid rgba(0, 104, 189, 1);
+  outline-offset: 2px;
+}
+
+.bottom {
+  margin-top: 100px;
+  position: relative;
+}
+
+.botton > img {
+  width: 170px;
+  height: 98px;
+  padding: 20px 30px 20px 30px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  box-shadow: 1px 2px 4px 2px rgba(82, 73, 73, 0.1);
+}
+
+.botton {
+  display: inline;
+  border: hidden;
+  border-width: 5px;
+  border-radius: 10px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.botton:hover {
+  transform: scale(1.05);
+}
+
+.botton:active {
+  outline: 4px solid rgba(0, 104, 189, 1);
+}
+
+.botton:focus {
+  outline: 4px solid rgba(0, 104, 189, 1);
+}
+
+.allbotton {
+  white-space: nowrap;
+}

@@ -1,0 +1,102 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+  width: 1577px;
+  height: 570px;
+}
+
+.main > img {
+  position: relative;
+  margin-left: -250px;
+  width: 130%;
+  height: auto;
+}
+
+.information {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  left: 100px;
+  top: 250px;
+}
+
+.content > button > img {
+  width: 350px;
+  height: 197px;
+  border-radius: 10px;
+}
+
+.content {
+  background-color: #252550;
+  height: 450px;
+}
+
+.section {
+  margin-left: 15px;
+  color: white;
+  width: 400px;
+  height: 320px;
+  display: inline;
+  border: hidden;
+  border-width: 5px;
+  border-radius: 10px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.section:hover {
+  transform: scale(1.05);
+  outline: 4px solid #0072ce;
+  background-color: #1e1e28;
+}
+
+.section1 {
+  margin-left: 100px;
+  color: white;
+  width: 400px;
+  height: 320px;
+  display: inline;
+  border: hidden;
+  border-width: 5px;
+  border-radius: 10px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.section1:hover {
+  transform: scale(1.05);
+  outline: 4px solid #0072ce;
+  background-color: #1e1e28;
+}
+
+.bottom {
+  background-color: #252550;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.bottom > a {
+  margin: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  padding: 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease;
+}
+
+.bottom > a:hover {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

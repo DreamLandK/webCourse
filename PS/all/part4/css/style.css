@@ -1,0 +1,213 @@
+/* 全局重置样式 */
+* {
+  padding: 0;
+  /* 清除所有元素的内边距 */
+  margin: 0;
+  /* 清除所有元素的外边距 */
+  box-sizing: border-box;
+  /* 设置盒模型为border-box，使宽度包含padding和border */
+}
+
+/* 输入框样式 */
+input {
+  outline: none;
+  /* 去除输入框获取焦点时的轮廓线 */
+  border: none;
+  /* 去除输入框边框 */
+}
+
+/* 第一个区块样式 */
+.b1 {
+  padding: 50px 0;
+  /* 上下内边距50px，左右0 */
+  background: url(../img/4.webp) no-repeat;
+  /* 设置背景图片 */
+  background-position: top;
+  /* 背景图片定位在顶部 */
+}
+
+/* h2标题特殊样式 */
+.b2>h2 {
+  font-size: 30px;
+  /* 设置字体大小 */
+  font-weight: bolder;
+  /* 加粗字体 */
+  margin: 30px 0;
+  /* 上下外边距30px */
+}
+
+/* 第二个区块样式 */
+.b2 {
+  text-align: center;
+  /* 文本居中对齐 */
+}
+
+/* 第四个区块样式 */
+.b4 {
+  margin: 30px 0;
+  /* 上下外边距30px */
+}
+
+/* 第三个区块样式 */
+.b3 {
+  display: flex;
+  /* 启用flex布局 */
+  justify-content: center;
+  /* 子元素水平居中 */
+}
+
+/* 第三个区块中的子元素样式 */
+.b31 {
+  background: url(../img/1.webp) no-repeat center;
+  /* 设置背景图片 */
+  background-size: cover;
+  /* 背景图片覆盖整个元素 */
+  height: 300px;
+  /* 设置固定高度 */
+  width: 70%;
+  /* 设置宽度为父元素的70% */
+  margin: 0 30px;
+  /* 左右外边距30px */
+  border-radius: 15px;
+  /* 圆角边框 */
+  display: flex;
+  /* 启用flex布局 */
+  flex-direction: column;
+  /* 垂直排列子元素 */
+  justify-content: flex-end;
+  /* 子元素在底部对齐 */
+  padding: 0 0 30px 50px;
+  /* 内边距（左下） */
+  color: white;
+  /* 文字颜色为白色 */
+}
+
+/* 段落样式 */
+.p1 {
+  margin: 20px 0;
+  /* 上下外边距20px */
+  font-size: 22px;
+  /* 设置字体大小 */
+}
+
+/* 第三个区块中第四个段落特殊样式 */
+.b31 p:nth-child(4) {
+  font-size: 14px;
+  /* 设置较小字体大小 */
+}
+
+/* 按钮容器样式 */
+.b51 button {
+  padding: 10px 30px;
+  /* 按钮内边距 */
+  background: #0070cc;
+  /* 蓝色背景 */
+  border: 0;
+  /* 去除边框 */
+  border-radius: 30px;
+  /* 圆形边框 */
+  color: white;
+  /* 白色文字 */
+}
+
+/* 按钮外层容器样式 */
+.b51 {
+  padding: 2px;
+  /* 内边距2px */
+  border-radius: 30px;
+  /* 圆形边框 */
+  border: 2px solid #c3c6ce;
+  /* 浅灰色边框 */
+}
+
+/* 按钮悬停效果 */
+.b51:hover {
+  border: 2px solid #0070cc;
+  /* 悬停时边框变为蓝色 */
+}
+
+/* 第五个区块样式 */
+.b5 {
+  display: flex;
+  /* 启用flex布局 */
+  justify-content: center;
+  /* 子元素水平居中 */
+  margin: 15px 0;
+  /* 上下外边距15px */
+}
+
+/* 第九个区块样式 */
+.b9 {
+  display: flex;
+  /* 启用flex布局 */
+  justify-content: space-between;
+  /* 子元素两端对齐 */
+  padding: 80px 110px;
+  /* 内边距 */
+  align-items: center;
+  /* 子元素垂直居中 */
+  background: url(../img/5.webp) no-repeat center;
+  /* 设置背景图片 */
+}
+
+/* 第九个区块中的左侧部分 */
+.b91 {
+  width: 50%;
+  /* 宽度为父元素的50% */
+}
+
+/* 第九个区块中的右侧部分 */
+.b92 {
+  width: 40%;
+  /* 宽度为父元素的40% */
+}
+
+/* 左侧部分第二个段落特殊样式 */
+.b91 p:nth-child(2) {
+  padding: 15px 0;
+  /* 上下内边距15px */
+}
+
+/* 按钮组样式 */
+.b93 {
+  display: flex;
+  /* 启用flex布局 */
+  margin-right: 20px;
+  /* 右外边距20px */
+}
+
+/* 按钮样式 */
+.b93 button {
+  padding: 10px 30px;
+  /* 按钮内边距 */
+  border-radius: 30px;
+  /* 圆形边框 */
+  border: 0;
+  /* 去除边框 */
+  background: #0070cc;
+  /* 蓝色背景 */
+  color: white;
+  /* 白色文字 */
+}
+
+/* 按钮外层容器样式 */
+.b94 {
+  padding: 2px;
+  /* 内边距2px */
+  border: 2px solid white;
+  /* 白色边框 */
+  border-radius: 30px;
+  /* 圆形边框 */
+}
+
+/* 按钮悬停效果 */
+.b94:hover {
+  border: 2px solid #0070cc;
+  /* 悬停时边框变为蓝色 */
+}
+
+/* 右侧部分图片样式 */
+.b92 img {
+  width: 100%;
+  /* 图片宽度填满容器 */
+}

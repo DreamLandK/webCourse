@@ -1,0 +1,231 @@
+/* 页面基础样式 - 修改为纵向排列 */
+body {
+  margin: 0px;
+  /* 去除默认外边距 */
+  font-style: normal;
+  /* 设置字体样式为正常 */
+  display: flex;
+  /* 使用弹性布局 */
+  flex-direction: column;
+  /* 改为纵向排列 */
+  justify-content: center;
+  /* 水平居中内容 */
+  align-items: center;
+  /* 垂直居中内容 */
+  min-height: 100vh;
+  /* 最小高度为视口高度 */
+}
+
+/* 标题样式 - 居中显示 */
+.part6_title {
+  text-align: center;
+  /* 文字居中 */
+}
+
+/* 按钮基础样式 - 块级居中显示 */
+.part6_botton {
+  display: block;
+  /* 块级显示 */
+  text-align: center;
+  /* 文字居中 */
+  margin-bottom: 100px;
+  /* 在botton下方增加100px的外边距 */
+}
+
+/* 第一个区块容器样式 - 带圆角和阴影效果 */
+.part6_section1 {
+  margin-left: 0px;
+  /* 左侧外边距 */
+  width: 461px;
+  /* 固定宽度 */
+  height: 556px;
+  /* 固定高度 */
+  border: hidden;
+  /* 隐藏边框 */
+  border-radius: 15px;
+  /* 圆角半径 */
+  box-shadow: 3px grey;
+  /* 灰色阴影效果 */
+  background: none;
+  /* 透明背景 */
+}
+
+/* 区块内子标题样式 - 增大字体 */
+.part6_section1>h5 {
+  font-size: larger;
+  /* 加大字号 */
+}
+
+/* 区块内图片样式 - 固定尺寸带圆角 */
+.part6_section1>img {
+  width: 445px;
+  /* 图片宽度 */
+  height: 250px;
+  /* 图片高度 */
+  border-radius: 15px;
+  /* 圆角效果 */
+}
+
+/* 通用区块样式 - 与section1类似的样式 */
+.part6_section {
+  width: 461px;
+  /* 固定宽度 */
+  height: 556px;
+  /* 固定高度 */
+  border: hidden;
+  /* 隐藏边框 */
+  border-radius: 15px;
+  /* 圆角半径 */
+  box-shadow: 3px grey;
+  /* 灰色阴影效果 */
+  background: none;
+  /* 透明背景 */
+}
+
+/* 通用区块内子标题样式 */
+.part6_section>h5 {
+  font-size: larger;
+  /* 加大字号 */
+}
+
+/* 通用区块内图片样式 - 居中显示 */
+.part6_section>img {
+  width: 445px;
+  /* 图片宽度 */
+  height: 250px;
+  /* 图片高度 */
+  border-radius: 15px;
+  /* 圆角效果 */
+  display: inline;
+  /* 行内显示 */
+  margin: 0 auto;
+  /* 水平居中 */
+}
+
+/* 链接样式 - 移除下划线并设置颜色 */
+.news1 .news2 .news3>a {
+  text-decoration: none;
+  /* 移除下划线 */
+  color: white;
+  /* 设置文字颜色为白色 */
+}
+
+/* 链接悬停效果 - 添加下划线 */
+.news1 .news2 .news3>a:hover {
+  text-decoration: underline;
+  /* 悬停时显示下划线 */
+}
+
+/* 新闻头部容器 - 弹性布局 */
+.news_header {
+  display: flex;
+  /* 弹性布局 */
+  gap: 20px;
+  /* 元素间间距为20px */
+  text-align: center;
+  /* 文字居中 */
+}
+
+/* 新闻区块共同样式 - 蓝色背景白色文字 */
+.news1,
+.news2,
+.news3 {
+  width: 360px;
+  /* 固定宽度 */
+  height: 550px;
+  /* 固定高度 */
+  background-color: #304792;
+  /* 蓝色背景 */
+  display: inline;
+  /* 行内显示 */
+  color: white;
+  /* 白色文字 */
+}
+
+/* 第一个新闻区块标题样式 */
+.news1>h1 {
+  margin-bottom: 50px;
+  /* 下方外边距 */
+}
+
+/* 第一个新闻区块图片样式 - 定位在底部 */
+.news1>img {
+  width: 100%;
+  /* 宽度占满容器 */
+  height: auto;
+  /* 高度自适应 */
+  position: relative;
+  /* 相对定位 */
+  left: 2px;
+  /* 左侧偏移 */
+  top: 71px;
+  /* 顶部偏移 */
+  bottom: 0px;
+  /* 底部偏移 */
+}
+
+/* 第二个新闻区块标题样式 */
+.news2>h1 {
+  margin-bottom: 50px;
+  /* 下方外边距 */
+}
+
+/* 第二个新闻区块图片样式 - 定位在底部 */
+.news2>img {
+  width: 100%;
+  /* 宽度占满容器 */
+  height: auto;
+  /* 高度自适应 */
+  position: relative;
+  /* 相对定位 */
+  bottom: 0px;
+  /* 底部偏移 */
+  left: 2px;
+  /* 左侧偏移 */
+  top: 73px;
+  /* 顶部偏移 */
+}
+
+/* 第三个新闻区块标题样式 */
+.news3>h1 {
+  margin-bottom: 50px;
+  /* 下方外边距 */
+}
+
+/* 第三个新闻区块图片样式 - 定位在底部 */
+.news3>img {
+  width: 100%;
+  /* 宽度占满容器 */
+  height: auto;
+  /* 高度自适应 */
+  position: relative;
+  /* 相对定位 */
+  bottom: 0px;
+  /* 底部偏移 */
+  left: 2px;
+  /* 左侧偏移 */
+  top: 72px;
+  /* 顶部偏移 */
+}
+
+/* 带箭头的链接样式 - 行内弹性布局 */
+.link-with-arrow {
+  display: inline-flex;
+  /* 行内弹性布局 */
+  align-items: center;
+  /* 垂直居中对齐 */
+  text-decoration: none;
+  /* 移除下划线 */
+  color: white;
+  /* 白色文字 */
+}
+
+/* 带箭头链接的伪元素 - 添加箭头符号 */
+.link-with-arrow::after {
+  content: "\003E";
+  /* Unicode 字符 > */
+  margin-left: 5px;
+  /* 箭头和文字之间的间距 */
+  font-size: 1em;
+  /* 箭头大小 */
+}

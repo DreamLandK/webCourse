@@ -1,0 +1,224 @@
+body {
+  font-family: var(--dk-font);
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px;
+}
+
+header.top {
+  background-color: black;
+  width: auto;
+  height: 45px;
+}
+
+.SONY_logo > a > img {
+  width: auto;
+  height: 17px;
+  float: right;
+  margin: 14px 13px 14px 14px;
+}
+
+.menu > ul > li {
+  margin: 10px 5px 5px;
+  position: relative;
+  top: -5px;
+  list-style: none;
+}
+
+.menu > ul > li > img {
+  margin-bottom: -18px;
+  margin-left: -20px;
+}
+
+.PlayStation_account {
+  left: 800px;
+  margin-left: 900px;
+}
+
+.search {
+  position: absolute !important;
+  top: -2px;
+  left: 1540px;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a:hover {
+  color: #0072ce;
+}
+
+ul li a:link {
+  color: black;
+}
+
+.PlayStation_account > a {
+  background-color: #007bc2;
+  color: white;
+  border-radius: 80px;
+  padding: 3px 9px 3px 9px;
+  font-weight: 900;
+}
+
+.PlayStation_account a:hover {
+  background-color: #00439c;
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+button {
+  display: inline;
+}
+
+.sale-banner {
+  transform: scale(0.25);
+  transform-origin: left top;
+  position: absolute;
+  left: 40px; /* 原位置的两倍值用于补偿缩放 */
+  top: 100px; /* 原位置的两倍值用于补偿缩放 */
+}
+
+.image {
+  position: relative;
+}
+
+.nav-item {
+  position: relative;
+  top: -10px;
+}
+
+/* 新增导航菜单固定定位 */
+.menu {
+  position: fixed;
+  top: 45px; /* header的高度 */
+  width: 100%;
+  background: white;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 调整内容区域避免遮挡 */
+body {
+  padding-top: 95px; /* header高度45px + 导航高度约50px */
+}
+
+/* 保持原有header样式 */
+header.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.image h1,
+.image p {
+  position: relative;
+  top: -200px; /* 整体上移50像素 */
+}
+
+/* 或者使用容器包裹 */
+.text-group {
+  position: relative;
+  left: 100px; /* 向右移动50像素 */
+  top: -20px; /* 向上移动50像素 */
+}
+
+.text-group h1,
+.text-group p {
+  font-size: 1.3em; /* 原有字体大小的130% */
+  /* 保持其他文字样式不变 */
+}
+
+.purchase-button {
+  display: inline-block;
+  background-color: #007bc2;
+  color: white !important;
+  border-radius: 80px;
+  padding: 3px 9px;
+  font-weight: 900;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.purchase-button:hover {
+  background-color: #00439c;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px; /* 添加间距 */
+}
+
+.list button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 200px; /* 固定宽度 */
+  height: 200px; /* 固定高度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  filter: none;
+  border: 3px solid transparent; /* 初始透明边框 */
+}
+
+.list img:active {
+  border-color: #4285f4; /* 点击时显示蓝色边框 */
+  box-shadow: 0 0 10px rgba(66, 133, 244, 0.5);
+}
+
+.list img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.list img:hover {
+  opacity: 1; /* 悬停时完全不透明 */
+  transform: scale(1.05);
+}
+
+.list img:hover {
+  border-color: #1a73e8; /* 悬停时加深蓝色 */
+  box-shadow: 0 0 15px rgba(26, 115, 232, 0.7); /* 悬停时增强发光 */
+  transform: scale(1.05);
+}
+
+.list img:hover {
+  opacity: 1; /* 悬停时完全不透明 */
+  transform: scale(1.05);
+}
+
+.list img:hover {
+  opacity: 1;
+  transform: scale(1.05) translateY(-20px);
+  border-color: #1a73e8;
+  box-shadow: 0 0 15px rgba(26, 115, 232, 0.7);
+}
+.list img:focus {
+  border-color: #4285f4;
+  box-shadow: 0 0 10px rgba(66, 133, 244, 0.5);
+  opacity: 1;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.list button:focus {
+  outline: none;
+}

@@ -1,0 +1,326 @@
+/* body和html元素的通用样式 */
+body,
+html {
+  margin: 0; /* 移除默认外边距 */
+  padding: 0; /* 移除默认内边距 */
+  width: 100%; /* 设置宽度为100% */
+  overflow-x: hidden; /* 隐藏水平滚动条 */
+}
+
+/* 标题样式 */
+.part7_title {
+  text-align: center; /* 文本居中对齐 */
+  font-size: 175%; /* 字体大小为175% */
+  font-weight: 450; /* 字体粗细为450 */
+  margin-bottom: 80px; /* 底部外边距为80px */
+}
+
+/* 社交媒体图标容器样式 */
+.SocialMedia {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为30px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 社交媒体图标样式 */
+.SocialMedia > a > img {
+  width: 130px; /* 宽度为130px */
+  height: 130px; /* 高度为130px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 15px; /* 圆角半径为15px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 社交媒体图标悬停效果 */
+.SocialMedia > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 第二组社交媒体图标容器样式 */
+.SocialMedia_2 {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为30px */
+  margin-bottom: 84px; /* 底部外边距为84px */
+}
+
+/* 第二组社交媒体图标样式 */
+.SocialMedia_2 > a > img {
+  width: 130px; /* 宽度为130px */
+  height: 130px; /* 高度为130px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 15px; /* 圆角半径为15px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 第二组社交媒体图标悬停效果 */
+.SocialMedia_2 > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 第二个标题样式 */
+.title_2 {
+  text-align: center; /* 文本居中对齐 */
+  font-size: 175%; /* 字体大小为175% */
+  font-weight: 450; /* 字体粗细为450 */
+  margin-bottom: 80px; /* 底部外边距为80px */
+}
+
+/* 促销图片容器样式 */
+.sale {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为30px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 促销图片样式 */
+.sale > a > img {
+  width: 560px; /* 宽度为560px */
+  height: 315px; /* 高度为315px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 17px; /* 圆角半径为17px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 促销图片悬停效果 */
+.sale > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 第二组促销图片容器样式 */
+.sale_2 {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为30px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 第二组促销图片样式 */
+.sale_2 > a > img {
+  width: 560px; /* 宽度为560px */
+  height: 315px; /* 高度为315px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 17px; /* 圆角半径为17px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 第二组促销图片悬停效果 */
+.sale_2 > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 底部内容段落样式 */
+.footer-content > p {
+  margin-left: 7%; /* 与 .MARVEL 的 left 对齐 */
+  margin-top: 1px; /* 调整顶部外边距以缩短段落间距 */
+  margin-bottom: 1px; /* 调整顶部外边距以缩短段落间距 */
+}
+
+/* MARVEL 图片容器样式 */
+.MARVEL {
+  margin-top: 100px; /* 顶部外边距为100px */
+  margin-bottom: 40px; /* 底部外边距为40px */
+  width: 175px; /* 宽度为175px */
+  height: 66px; /* 高度为66px */
+  position: relative; /* 定位方式为相对定位 */
+  left: 7%; /* 距离左侧7% */
+  top: 110%; /* 距离顶部110% */
+}
+
+/* 第一个 MARVEL 相关内容样式 */
+.MARVEL_content_first {
+  margin-top: 50px; /* 顶部外边距为50px */
+  font-size: smaller; /* 字体大小 */
+  margin-bottom: 100px; /* 底部外边距 */
+}
+
+/* 底部内容容器样式 */
+.footer-content {
+  margin-bottom: 100px; /* 底部外边距 */
+}
+
+/* 底部区域样式 */
+.footer {
+  background-color: #194296; /* 背景颜色 */
+  width: 100%; /* 宽度为100% */
+  color: white; /* 文本颜色为白色 */
+}
+
+/* 居中分割线样式 */
+.centered-line {
+  border: none; /* 移除默认边框 */
+  height: 2px; /* 设置高度 */
+  background-color: rgba(197, 186, 186, 0.257); /* 设置颜色 */
+  margin: 20px auto; /* 设置上下外边距并水平居中 */
+  width: 91%; /* 设置宽度 */
+  margin-top: 0px; /* 顶部外边距 */
+}
+
+/* 使footer的直接子元素（section, jump, trademark, jump_last）与居中hr的起始和结束位置对齐 */
+.footer > section,
+.jump,
+.trademark,
+.jump_last { /* Add .jump_last here */
+  margin-left: 4.5%; /* 与居中hr的左边缘对齐 */
+  margin-right: 4.5%; /* 可选：添加右外边距以保持一致性，或使用宽度 */
+  width: calc(100% - 9%); /* 可选：设置宽度以匹配hr的宽度 */
+}
+
+/* jump区域样式 */
+.jump {
+  display: flex; /* 使用flex布局 */
+  gap: 125px; /* 子元素之间的间距 */
+  /* margin-left: 4.5%; /* These are now handled by the combined rule above */
+  /* margin-right: 4.5%; */
+  /* width: calc(100% - 9%); */
+  margin-bottom: 10px; /* 底部外边距 */
+}
+
+/* jump_list ul样式 */
+.jump_list ul {
+  list-style: none; /* 移除列表默认的圆点 */
+  padding: 0; /* 移除列表默认的内边距 */
+  margin: 0; /* 移除列表默认的外边距 */
+}
+
+/* jump_list li样式 */
+.jump_list li {
+  display: inline-block; /* 行内块显示 */
+  margin-right: 20px; /* 可选：添加右侧间距 */
+}
+
+/* jump区域超链接样式 */
+.jump a {
+  text-decoration: none; /* 移除超链接下划线 */
+  color: white; /* 设置超链接文本颜色为白色 */
+}
+
+/* jump_list超链接悬停效果 */
+.jump_list a:hover {
+  /* 修改选择器，直接针对 .jump_list 下的 a 标签 */
+  color: grey; /* 悬停时文本颜色变为灰色 */
+}
+
+/* trademark_content_first样式 */
+.trademark_content_first {
+  margin-bottom: 0px; /* 底部外边距 */
+}
+
+/* trademark_content样式 */
+.trademark_content {
+  margin-top: 0px; /* 顶部外边距 */
+}
+
+/* trademark图片样式 */
+.trademark img {
+  width: 370px; /* 容器宽度 */
+  height: 130px; /* 容器高度 */
+}
+
+/* PlayStation Logo容器样式 */
+.PlayStation_Logo {
+  width: 280px; /* 容器宽度 */
+  height: 65px; /* 容器高度 */
+  margin-top: 12px; /* 顶部外边距 */
+  margin-bottom: 10px; /* 底部外边距 */
+}
+
+/* PlayStation Logo图片样式 */
+.PlayStation_Logo img {
+  width: 100%; /* 让图片宽度填充其父容器 */
+  height: 100%; /* 让图片高度填充其父容器 */
+  object-fit: contain; /* 保持图片比例 */
+}
+
+/* language图片样式 */
+.language img {
+  width: 25px; /* 容器宽度 */
+  height: 27px; /* 容器高度 */
+  margin-left: 75px; /* 左外边距 */
+}
+
+/* detailed超链接样式 */
+.detailed {
+  color: white; /* 设置文本颜色为白色 */
+}
+
+/* detailed超链接悬停效果 */
+.detailed a:hover {
+  color: grey; /* 悬停时文本颜色变为灰色 */
+}
+
+/* language区域样式 */
+.language {
+  position: relative; /* 相对定位 */
+  background-color: #194296; /* 背景颜色 */
+}
+
+/* language区域超链接样式 */
+.language > a {
+  position: absolute; /* 绝对定位 */
+  top: -16px; /* 顶部偏移 */
+  left: 110px; /* 左侧偏移 */
+  text-decoration: none; /* 移除下划线 */
+  color: white; /* 文本颜色为白色 */
+}
+
+/* language区域超链接内部p标签样式 */
+.language > a > p {
+  margin-bottom: 0px; /* 底部外边距 */
+}
+
+/* jump_last区域超链接样式 */
+.jump_last a {
+  text-decoration: none; /* 移除下划线 */
+  color: white; /* 文本颜色为白色 */
+  /* float: right; /* 如果需要保持右对齐，可以保留 */
+  padding-right: 10px; /* 在竖线和文本之间添加一些间距 */
+  margin-right: 10px; /* 在竖线和下一个元素之间添加一些间距 */
+  border-right: 1px solid white; /* 添加右侧竖线 */
+}
+
+/* jump_last区域最后一个超链接样式 */
+.jump_last a:last-child {
+  border-right: none; /* 移除最后一个元素的右侧竖线 */
+  padding-right: 0; /* 移除最后一个元素的右侧填充 */
+  margin-right: 0; /* 移除最后一个元素的右侧外边距 */
+}
+
+/* jump_last区域直接子元素a标签样式 */
+.jump_last > a {
+  position: relative; /* 相对定位 */
+  top: -16px; /* 顶部偏移 */
+  left: 810px; /* 左侧偏移 */
+}
+
+/* jump_last超链接悬停效果 */
+.jump_last a:hover {
+  color: grey; /* 悬停时文本颜色变为灰色 */
+}
+
+/* jump_6区域jump_list图片样式 */
+.jump_6 .jump_list img {
+  /* 针对 jump_6 中的图片 */
+  width: 30px; /* 设置图片宽度 */
+  height: 30px; /* 设置图片高度 */
+  object-fit: contain; /* 保持图片比例 */
+}
+
+/* jump6区域jump_list样式 */
+.jump6 > .jump_list {
+  display: inline-block; /* 行内块显示 */
+}

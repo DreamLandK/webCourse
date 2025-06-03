@@ -1,0 +1,1340 @@
+body {
+  font-family: var(--dk-font);
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px;
+}
+
+header.top {
+  background-color: black;
+  width: auto;
+  height: 45px;
+}
+
+.SONY_logo>a>img {
+  width: auto;
+  height: 17px;
+  float: right;
+  margin: 14px 13px 14px 14px;
+}
+
+.menu>ul>li {
+  margin: 10px 5px 5px;
+  position: relative;
+  top: -5px;
+  list-style: none;
+}
+
+.menu>ul>li>img {
+  margin-bottom: -18px;
+  margin-left: -20px;
+}
+
+.PlayStation_account {
+  left: 800px;
+  margin-left: 900px;
+}
+
+.search {
+  position: absolute !important;
+  top: -2px;
+  left: 1540px;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a:hover {
+  color: #0072ce;
+}
+
+ul li a:link {
+  color: black;
+}
+
+.PlayStation_account>a {
+  background-color: #007bc2;
+  color: white;
+  border-radius: 80px;
+  padding: 3px 9px 3px 9px;
+  font-weight: 900;
+}
+
+.PlayStation_account a:hover {
+  background-color: #00439c;
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+button {
+  display: inline;
+}
+
+.sale-banner {
+  transform: scale(0.25);
+  transform-origin: left top;
+  position: absolute;
+  left: 40px;
+  /* 原位置的两倍值用于补偿缩放 */
+  top: 100px;
+  /* 原位置的两倍值用于补偿缩放 */
+}
+
+.image {
+  position: relative;
+}
+
+.nav-item {
+  position: relative;
+  top: -10px;
+}
+
+/* 新增导航菜单固定定位 */
+.menu {
+  position: fixed;
+  top: 45px;
+  /* header的高度 */
+  width: 100%;
+  background: white;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 调整内容区域避免遮挡 */
+body {
+  padding-top: 95px;
+  /* header高度45px + 导航高度约50px */
+}
+
+/* 保持原有header样式 */
+header.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.image h1,
+.image p {
+  position: relative;
+  top: -200px;
+  /* 整体上移50像素 */
+}
+
+/* 或者使用容器包裹 */
+.text-group {
+  position: relative;
+  left: 100px;
+  /* 向右移动50像素 */
+  top: -20px;
+  /* 向上移动50像素 */
+}
+
+.text-group h1,
+.text-group p {
+  font-size: 1.3em;
+  /* 原有字体大小的130% */
+  /* 保持其他文字样式不变 */
+}
+
+.purchase-button {
+  display: inline-block;
+  background-color: #007bc2;
+  color: white !important;
+  border-radius: 80px;
+  padding: 3px 9px;
+  font-weight: 900;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.purchase-button:hover {
+  background-color: #00439c;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* 添加间距 */
+  margin-top: 50px;
+}
+
+.list button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 200px;
+  /* 固定宽度 */
+  height: 200px;
+  /* 固定高度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  filter: none;
+  border: 3px solid transparent;
+  /* 初始透明边框 */
+}
+
+.list img:active {
+  border-color: #4285f4;
+  /* 点击时显示蓝色边框 */
+  box-shadow: 0 0 10px rgba(66, 133, 244, 0.5);
+}
+
+.list img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.list img:hover {
+  opacity: 1;
+  /* 悬停时完全不透明 */
+  transform: scale(1.05);
+}
+
+.list img:hover {
+  border-color: #1a73e8;
+  /* 悬停时加深蓝色 */
+  box-shadow: 0 0 15px rgba(26, 115, 232, 0.7);
+  /* 悬停时增强发光 */
+  transform: scale(1.05);
+}
+
+.list img:hover {
+  opacity: 1;
+  /* 悬停时完全不透明 */
+  transform: scale(1.05);
+}
+
+.list img:hover {
+  opacity: 1;
+  transform: scale(1.05) translateY(-20px);
+  border-color: #1a73e8;
+  box-shadow: 0 0 15px rgba(26, 115, 232, 0.7);
+}
+
+.list img:focus {
+  border-color: #4285f4;
+  box-shadow: 0 0 10px rgba(66, 133, 244, 0.5);
+  opacity: 1;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.list button:focus {
+  outline: none;
+}
+
+
+.allcontent{
+  margin-left: 400px;
+}
+.ps5content>h1 {
+  font-size: 55px;
+  left: 300px;
+  top: 100px;
+}
+
+.ps5content>h2 {
+  margin-bottom: 0px;
+  color: rgb(37, 94, 202);
+  font-weight: 600;
+}
+
+.ps5content>p {
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(83, 83, 83);
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+
+.ps5content {
+  position: absolute;
+  margin: 0px 0px 0px 70px;
+  width: 500px;
+}
+
+.ps5>img {
+  position: relative;
+  left: 600px;
+  width: 50%;
+  height: auto;
+}
+
+.ps5content>a {
+  margin: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  padding: 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  background-color: rgba(0, 104, 189, 1);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.ps5content>a:hover {
+  outline: 2px solid rgba(0, 104, 189, 1);
+  outline-offset: 2px;
+}
+
+.ps5procontent {
+  position: absolute;
+  margin: 100px 0px 0px 300px;
+  width: 700px;
+}
+
+.ps5pro>img {
+  position: relative;
+  left: 1050px;
+  width: 50%;
+  height: auto;
+}
+
+.ps5procontent>a {
+  margin: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  padding: 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  background-color: rgba(0, 104, 189, 1);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.ps5procontent>a:hover {
+  outline: 2px solid rgba(0, 104, 189, 1);
+  outline-offset: 2px;
+}
+
+.bottom {
+  margin-top: 100px;
+  position: relative;
+}
+
+.botton>img {
+  width: 170px;
+  height: 98px;
+  padding: 20px 30px 20px 30px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  box-shadow: 1px 2px 4px 2px rgba(82, 73, 73, 0.1);
+}
+
+.botton {
+  display: inline;
+  border: hidden;
+  border-width: 5px;
+  border-radius: 10px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.botton:hover {
+  transform: scale(1.05);
+}
+
+.botton:active {
+  outline: 4px solid rgba(0, 104, 189, 1);
+}
+
+.botton:focus {
+  outline: 4px solid rgba(0, 104, 189, 1);
+}
+
+.allbotton {
+  white-space: nowrap;
+}
+
+.part3_main{
+  background-color: #000;
+  margin-top: 50px;
+}
+
+.tab-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+}
+
+.tab.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  width: calc(20% - 16px);
+  /* 每行显示5张图（减去gap） */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .card {
+      width: calc(25% - 16px);
+      /* 每行显示4张图 */
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+      width: calc(33.33% - 16px);
+      /* 每行显示3张图 */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+      width: calc(50% - 16px);
+      /* 每行显示2张图 */
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+      width: 100%;
+      /* 每行显示1张图 */
+  }
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  /* 添加过渡效果 */
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card.dimmed img {
+  opacity: 0.5;
+}
+
+* {
+  padding: 0;
+  /* 清除所有元素的内边距 */
+  margin: 0;
+  /* 清除所有元素的外边距 */
+  box-sizing: border-box;
+  /* 设置盒模型为border-box，使宽度包含padding和border */
+}
+
+/* 输入框样式 */
+input {
+  outline: none;
+  /* 去除输入框获取焦点时的轮廓线 */
+  border: none;
+  /* 去除输入框边框 */
+}
+
+/* 第一个区块样式 */
+.b1 {
+  padding: 50px 0;
+  /* 上下内边距50px，左右0 */
+  background: url(img/4.webp) no-repeat;
+  /* 设置背景图片 */
+  background-position: top;
+  /* 背景图片定位在顶部 */
+}
+
+/* h2标题特殊样式 */
+.b2>h2 {
+  font-size: 30px;
+  /* 设置字体大小 */
+  font-weight: bolder;
+  /* 加粗字体 */
+  margin: 30px 0;
+  /* 上下外边距30px */
+}
+
+/* 第二个区块样式 */
+.b2 {
+  text-align: center;
+  /* 文本居中对齐 */
+}
+
+/* 第四个区块样式 */
+.b4 {
+  margin: 30px 0;
+  /* 上下外边距30px */
+}
+
+/* 第三个区块样式 */
+.b3 {
+  display: flex;
+  /* 启用flex布局 */
+  justify-content: center;
+  /* 子元素水平居中 */
+}
+
+/* 第三个区块中的子元素样式 */
+.b31 {
+  background: url(img/1.webp) no-repeat center;
+  /* 设置背景图片 */
+  background-size: cover;
+  /* 背景图片覆盖整个元素 */
+  height: 300px;
+  /* 设置固定高度 */
+  width: 70%;
+  /* 设置宽度为父元素的70% */
+  margin: 0 30px;
+  /* 左右外边距30px */
+  border-radius: 15px;
+  /* 圆角边框 */
+  display: flex;
+  /* 启用flex布局 */
+  flex-direction: column;
+  /* 垂直排列子元素 */
+  justify-content: flex-end;
+  /* 子元素在底部对齐 */
+  padding: 0 0 30px 50px;
+  /* 内边距（左下） */
+  color: white;
+  /* 文字颜色为白色 */
+}
+
+/* 段落样式 */
+.p1 {
+  margin: 20px 0;
+  /* 上下外边距20px */
+  font-size: 22px;
+  /* 设置字体大小 */
+}
+
+/* 第三个区块中第四个段落特殊样式 */
+.b31 p:nth-child(4) {
+  font-size: 14px;
+  /* 设置较小字体大小 */
+}
+
+/* 按钮容器样式 */
+.b51 button {
+  padding: 10px 30px;
+  /* 按钮内边距 */
+  background: #0070cc;
+  /* 蓝色背景 */
+  border: 0;
+  /* 去除边框 */
+  border-radius: 30px;
+  /* 圆形边框 */
+  color: white;
+  /* 白色文字 */
+}
+
+/* 按钮外层容器样式 */
+.b51 {
+  padding: 2px;
+  /* 内边距2px */
+  border-radius: 30px;
+  /* 圆形边框 */
+  border: 2px solid #c3c6ce;
+  /* 浅灰色边框 */
+}
+
+/* 按钮悬停效果 */
+.b51:hover {
+  border: 2px solid #0070cc;
+  /* 悬停时边框变为蓝色 */
+}
+
+/* 第五个区块样式 */
+.b5 {
+  display: flex;
+  /* 启用flex布局 */
+  justify-content: center;
+  /* 子元素水平居中 */
+  margin: 15px 0;
+  /* 上下外边距15px */
+}
+
+/* 第九个区块样式 */
+.b9 {
+  display: flex;
+  /* 启用flex布局 */
+  justify-content: space-between;
+  /* 子元素两端对齐 */
+  padding: 80px 110px;
+  /* 内边距 */
+  align-items: center;
+  /* 子元素垂直居中 */
+  background: url(img/5.webp) no-repeat center;
+  /* 设置背景图片 */
+}
+
+/* 第九个区块中的左侧部分 */
+.b91 {
+  width: 50%;
+  /* 宽度为父元素的50% */
+}
+
+/* 第九个区块中的右侧部分 */
+.b92 {
+  width: 40%;
+  /* 宽度为父元素的40% */
+}
+
+/* 左侧部分第二个段落特殊样式 */
+.b91 p:nth-child(2) {
+  padding: 15px 0;
+  /* 上下内边距15px */
+}
+
+/* 按钮组样式 */
+.b93 {
+  display: flex;
+  /* 启用flex布局 */
+  margin-right: 20px;
+  /* 右外边距20px */
+}
+
+/* 按钮样式 */
+.b93 button {
+  padding: 10px 30px;
+  /* 按钮内边距 */
+  border-radius: 30px;
+  /* 圆形边框 */
+  border: 0;
+  /* 去除边框 */
+  background: #0070cc;
+  /* 蓝色背景 */
+  color: white;
+  /* 白色文字 */
+}
+
+/* 按钮外层容器样式 */
+.b94 {
+  padding: 2px;
+  /* 内边距2px */
+  border: 2px solid white;
+  /* 白色边框 */
+  border-radius: 30px;
+  /* 圆形边框 */
+}
+
+/* 按钮悬停效果 */
+.b94:hover {
+  border: 2px solid #0070cc;
+  /* 悬停时边框变为蓝色 */
+}
+
+/* 右侧部分图片样式 */
+.b92 img {
+  width: 100%;
+  /* 图片宽度填满容器 */
+}
+
+
+.part5_main {
+  position: relative;
+  width: 1577px;
+  height: 570px;
+}
+
+.part5_main > img {
+  position: relative;
+  margin-left: -250px;
+  width: 130%;
+  height: auto;
+}
+
+.information {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  left: 100px;
+  top: 250px;
+}
+
+.part5_content > button > img {
+  width: 350px;
+  height: 197px;
+  border-radius: 10px;
+}
+
+.part5_content {
+  background-color: #252550;
+  height: 450px;
+}
+
+.part5_section {
+  margin-left: 15px;
+  color: white;
+  width: 400px;
+  height: 320px;
+  display: inline;
+  border: hidden;
+  border-width: 5px;
+  border-radius: 10px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.part5_section:hover {
+  transform: scale(1.05);
+  outline: 4px solid #0072ce;
+  background-color: #1e1e28;
+}
+
+.part5_section1 {
+  margin-left: 180px;
+  color: white;
+  width: 400px;
+  height: 320px;
+  display: inline;
+  border: hidden;
+  border-width: 5px;
+  border-radius: 10px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.part5_section1:hover {
+  transform: scale(1.05);
+  outline: 4px solid #0072ce;
+  background-color: #1e1e28;
+}
+
+.part5_bottom {
+  background-color: #252550;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.part5_bottom > a {
+  margin: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  padding: 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease;
+}
+
+.part5_bottom > a:hover {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* 页面基础样式 - 修改为纵向排列 */
+body {
+  margin: 0px;
+  /* 去除默认外边距 */
+  font-style: normal;
+  /* 设置字体样式为正常 */
+  display: flex;
+  /* 使用弹性布局 */
+  flex-direction: column;
+  /* 改为纵向排列 */
+  justify-content: center;
+  /* 水平居中内容 */
+  align-items: center;
+  /* 垂直居中内容 */
+  min-height: 100vh;
+  /* 最小高度为视口高度 */
+}
+
+/* 标题样式 - 居中显示 */
+.part6_title {
+  text-align: center;
+  /* 文字居中 */
+}
+
+/* 按钮基础样式 - 块级居中显示 */
+.part6_botton {
+  display: block;
+  /* 块级显示 */
+  text-align: center;
+  /* 文字居中 */
+  margin-bottom: 100px;
+  /* 在botton下方增加100px的外边距 */
+}
+
+/* 第一个区块容器样式 - 带圆角和阴影效果 */
+.part6_section1 {
+  margin-left: 0px;
+  /* 左侧外边距 */
+  width: 461px;
+  /* 固定宽度 */
+  height: 556px;
+  /* 固定高度 */
+  border: hidden;
+  /* 隐藏边框 */
+  border-radius: 15px;
+  /* 圆角半径 */
+  box-shadow: 3px grey;
+  /* 灰色阴影效果 */
+  background: none;
+  /* 透明背景 */
+}
+
+/* 区块内子标题样式 - 增大字体 */
+.part6_section1>h5 {
+  font-size: larger;
+  /* 加大字号 */
+}
+
+/* 区块内图片样式 - 固定尺寸带圆角 */
+.part6_section1>img {
+  width: 445px;
+  /* 图片宽度 */
+  height: 250px;
+  /* 图片高度 */
+  border-radius: 15px;
+  /* 圆角效果 */
+}
+
+/* 通用区块样式 - 与section1类似的样式 */
+.part6_section {
+  width: 461px;
+  /* 固定宽度 */
+  height: 556px;
+  /* 固定高度 */
+  border: hidden;
+  /* 隐藏边框 */
+  border-radius: 15px;
+  /* 圆角半径 */
+  box-shadow: 3px grey;
+  /* 灰色阴影效果 */
+  background: none;
+  /* 透明背景 */
+}
+
+/* 通用区块内子标题样式 */
+.part6_section>h5 {
+  font-size: larger;
+  /* 加大字号 */
+}
+
+/* 通用区块内图片样式 - 居中显示 */
+.part6_section>img {
+  width: 445px;
+  /* 图片宽度 */
+  height: 250px;
+  /* 图片高度 */
+  border-radius: 15px;
+  /* 圆角效果 */
+  display: inline;
+  /* 行内显示 */
+  margin: 0 auto;
+  /* 水平居中 */
+}
+
+/* 链接样式 - 移除下划线并设置颜色 */
+.news1 .news2 .news3>a {
+  text-decoration: none;
+  /* 移除下划线 */
+  color: white;
+  /* 设置文字颜色为白色 */
+}
+
+/* 链接悬停效果 - 添加下划线 */
+.news1 .news2 .news3>a:hover {
+  text-decoration: underline;
+  /* 悬停时显示下划线 */
+}
+
+/* 新闻头部容器 - 弹性布局 */
+.news_header {
+  display: flex;
+  /* 弹性布局 */
+  gap: 20px;
+  /* 元素间间距为20px */
+  text-align: center;
+  /* 文字居中 */
+}
+
+/* 新闻区块共同样式 - 蓝色背景白色文字 */
+.news1,
+.news2,
+.news3 {
+  width: 360px;
+  /* 固定宽度 */
+  height: 550px;
+  /* 固定高度 */
+  background-color: #304792;
+  /* 蓝色背景 */
+  display: inline;
+  /* 行内显示 */
+  color: white;
+  /* 白色文字 */
+}
+
+/* 第一个新闻区块标题样式 */
+.news1>h1 {
+  margin-bottom: 50px;
+  /* 下方外边距 */
+}
+
+/* 第一个新闻区块图片样式 - 定位在底部 */
+.news1>img {
+  width: 100%;
+  /* 宽度占满容器 */
+  height: auto;
+  /* 高度自适应 */
+  position: relative;
+  /* 相对定位 */
+  left: 2px;
+  /* 左侧偏移 */
+  top: 71px;
+  /* 顶部偏移 */
+  bottom: 0px;
+  /* 底部偏移 */
+}
+
+/* 第二个新闻区块标题样式 */
+.news2>h1 {
+  margin-bottom: 50px;
+  /* 下方外边距 */
+}
+
+/* 第二个新闻区块图片样式 - 定位在底部 */
+.news2>img {
+  width: 100%;
+  /* 宽度占满容器 */
+  height: auto;
+  /* 高度自适应 */
+  position: relative;
+  /* 相对定位 */
+  bottom: 0px;
+  /* 底部偏移 */
+  left: 2px;
+  /* 左侧偏移 */
+  top: 73px;
+  /* 顶部偏移 */
+}
+
+/* 第三个新闻区块标题样式 */
+.news3>h1 {
+  margin-bottom: 50px;
+  /* 下方外边距 */
+}
+
+/* 第三个新闻区块图片样式 - 定位在底部 */
+.news3>img {
+  width: 100%;
+  /* 宽度占满容器 */
+  height: auto;
+  /* 高度自适应 */
+  position: relative;
+  /* 相对定位 */
+  bottom: 0px;
+  /* 底部偏移 */
+  left: 2px;
+  /* 左侧偏移 */
+  top: 72px;
+  /* 顶部偏移 */
+}
+
+/* 带箭头的链接样式 - 行内弹性布局 */
+.link-with-arrow {
+  display: inline-flex;
+  /* 行内弹性布局 */
+  align-items: center;
+  /* 垂直居中对齐 */
+  text-decoration: none;
+  /* 移除下划线 */
+  color: white;
+  /* 白色文字 */
+}
+
+/* 带箭头链接的伪元素 - 添加箭头符号 */
+.link-with-arrow::after {
+  content: "\003E";
+  /* Unicode 字符 > */
+  margin-left: 5px;
+  /* 箭头和文字之间的间距 */
+  font-size: 1em;
+  /* 箭头大小 */
+}
+
+/* body和html元素的通用样式 */
+body,
+html {
+  margin: 0; /* 移除默认外边距 */
+  padding: 0; /* 移除默认内边距 */
+  width: 100%; /* 设置宽度为100% */
+  overflow-x: hidden; /* 隐藏水平滚动条 */
+}
+
+/* 标题样式 */
+.part7_title {
+  text-align: center; /* 文本居中对齐 */
+  font-size: 175%; /* 字体大小为175% */
+  font-weight: 450; /* 字体粗细为450 */
+  margin-bottom: 80px; /* 底部外边距为80px */
+}
+
+/* 社交媒体图标容器样式 */
+.SocialMedia {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为30px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 社交媒体图标样式 */
+.SocialMedia > a > img {
+  width: 130px; /* 宽度为130px */
+  height: 130px; /* 高度为130px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 15px; /* 圆角半径为15px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 社交媒体图标悬停效果 */
+.SocialMedia > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 第二组社交媒体图标容器样式 */
+.SocialMedia_2 {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为30px */
+  margin-bottom: 84px; /* 底部外边距为84px */
+}
+
+/* 第二组社交媒体图标样式 */
+.SocialMedia_2 > a > img {
+  width: 130px; /* 宽度为130px */
+  height: 130px; /* 高度为130px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 15px; /* 圆角半径为15px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 第二组社交媒体图标悬停效果 */
+.SocialMedia_2 > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 第二个标题样式 */
+.title_2 {
+  text-align: center; /* 文本居中对齐 */
+  font-size: 175%; /* 字体大小为175% */
+  font-weight: 450; /* 字体粗细为450 */
+  margin-bottom: 80px; /* 底部外边距为80px */
+}
+
+/* 促销图片容器样式 */
+.sale {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为30px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 促销图片样式 */
+.sale > a > img {
+  width: 560px; /* 宽度为560px */
+  height: 315px; /* 高度为315px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 17px; /* 圆角半径为17px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 促销图片悬停效果 */
+.sale > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 第二组促销图片容器样式 */
+.sale_2 {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为30px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 第二组促销图片样式 */
+.sale_2 > a > img {
+  width: 560px; /* 宽度为560px */
+  height: 315px; /* 高度为315px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 17px; /* 圆角半径为17px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 第二组促销图片悬停效果 */
+.sale_2 > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 底部内容段落样式 */
+.footer-content > p {
+  margin-left: 7%; /* 与 .MARVEL 的 left 对齐 */
+  margin-top: 1px; /* 调整顶部外边距以缩短段落间距 */
+  margin-bottom: 1px; /* 调整顶部外边距以缩短段落间距 */
+}
+
+/* MARVEL 图片容器样式 */
+.MARVEL {
+  margin-top: 100px; /* 顶部外边距为100px */
+  margin-bottom: 40px; /* 底部外边距为40px */
+  width: 175px; /* 宽度为175px */
+  height: 66px; /* 高度为66px */
+  position: relative; /* 定位方式为相对定位 */
+  left: 7%; /* 距离左侧7% */
+  top: 110%; /* 距离顶部110% */
+}
+
+/* 第一个 MARVEL 相关内容样式 */
+.MARVEL_content_first {
+  margin-top: 50px; /* 顶部外边距为50px */
+  font-size: smaller; /* 字体大小 */
+  margin-bottom: 100px; /* 底部外边距 */
+}
+
+/* 底部内容容器样式 */
+.footer-content {
+  margin-bottom: 100px; /* 底部外边距 */
+}
+
+/* 底部区域样式 */
+.part7_footer {
+  background-color: #194296; /* 背景颜色 */
+  width: 100%; /* 宽度为100% */
+  color: white; /* 文本颜色为白色 */
+}
+
+/* 居中分割线样式 */
+.centered-line {
+  border: none; /* 移除默认边框 */
+  height: 2px; /* 设置高度 */
+  background-color: rgba(197, 186, 186, 0.257); /* 设置颜色 */
+  margin: 20px auto; /* 设置上下外边距并水平居中 */
+  width: 91%; /* 设置宽度 */
+  margin-top: 0px; /* 顶部外边距 */
+}
+
+/* 使footer的直接子元素（section, jump, trademark, jump_last）与居中hr的起始和结束位置对齐 */
+.footer > section,
+.jump,
+.trademark,
+.jump_last { /* Add .jump_last here */
+  margin-left: 4.5%; /* 与居中hr的左边缘对齐 */
+  margin-right: 10%; /* 可选：添加右外边距以保持一致性，或使用宽度 */
+  width: calc(100% - 9%); /* 可选：设置宽度以匹配hr的宽度 */
+}
+
+/* jump区域样式 */
+.jump {
+  display: flex; /* 使用flex布局 */
+  gap: 125px; /* 子元素之间的间距 */
+  /* margin-left: 4.5%; /* These are now handled by the combined rule above */
+  /* margin-right: 4.5%; */
+  /* width: calc(100% - 9%); */
+  margin-bottom: 10px; /* 底部外边距 */
+}
+
+/* jump_list ul样式 */
+.jump_list ul {
+  list-style: none; /* 移除列表默认的圆点 */
+  padding: 0; /* 移除列表默认的内边距 */
+  margin: 0; /* 移除列表默认的外边距 */
+}
+
+/* jump_list li样式 */
+.jump_list li {
+  display: inline-block; /* 行内块显示 */
+  margin-right: 20px; /* 可选：添加右侧间距 */
+}
+
+/* jump区域超链接样式 */
+.jump a {
+  text-decoration: none; /* 移除超链接下划线 */
+  color: white !important; /* 设置超链接文本颜色为白色 */
+}
+
+/* jump_list超链接悬停效果 */
+.jump_list a:hover {
+  /* 修改选择器，直接针对 .jump_list 下的 a 标签 */
+  color: grey; /* 悬停时文本颜色变为灰色 */
+}
+
+/* trademark_content_first样式 */
+.trademark_content_first {
+  margin-bottom: 0px; /* 底部外边距 */
+}
+
+/* trademark_content样式 */
+.trademark_content {
+  margin-top: 0px; /* 顶部外边距 */
+}
+
+/* trademark图片样式 */
+.trademark img {
+  width: 370px; /* 容器宽度 */
+  height: 130px; /* 容器高度 */
+}
+
+/* PlayStation Logo容器样式 */
+.PlayStation_Logo {
+  width: 280px; /* 容器宽度 */
+  height: 65px; /* 容器高度 */
+  margin-top: 12px; /* 顶部外边距 */
+  margin-bottom: 10px; /* 底部外边距 */
+}
+
+/* PlayStation Logo图片样式 */
+.PlayStation_Logo img {
+  width: 100%; /* 让图片宽度填充其父容器 */
+  height: 100%; /* 让图片高度填充其父容器 */
+  object-fit: contain; /* 保持图片比例 */
+}
+
+/* language图片样式 */
+.language img {
+  width: 25px; /* 容器宽度 */
+  height: 27px; /* 容器高度 */
+  margin-left: 75px; /* 左外边距 */
+}
+
+/* detailed超链接样式 */
+.detailed {
+  color: white; /* 设置文本颜色为白色 */
+}
+
+/* detailed超链接悬停效果 */
+.detailed a:hover {
+  color: grey; /* 悬停时文本颜色变为灰色 */
+}
+
+/* language区域样式 */
+.language {
+  position: relative; /* 相对定位 */
+  background-color: #194296; /* 背景颜色 */
+}
+
+/* language区域超链接样式 */
+.language > a {
+  position: absolute; /* 绝对定位 */
+  top: -16px; /* 顶部偏移 */
+  left: 110px; /* 左侧偏移 */
+  text-decoration: none; /* 移除下划线 */
+  color: white; /* 文本颜色为白色 */
+}
+
+/* language区域超链接内部p标签样式 */
+.language > a > p {
+  margin-bottom: 0px; /* 底部外边距 */
+}
+
+/* jump_last区域超链接样式 */
+.jump_last a {
+  text-decoration: none; /* 移除下划线 */
+  color: white !important; /* 文本颜色为白色 */
+  /* float: right; /* 如果需要保持右对齐，可以保留 */
+  padding-right: 10px; /* 在竖线和文本之间添加一些间距 */
+  margin-right: 10px; /* 在竖线和下一个元素之间添加一些间距 */
+  border-right: 1px solid white; /* 添加右侧竖线 */
+}
+
+/* jump_last区域最后一个超链接样式 */
+.jump_last a:last-child {
+  border-right: none; /* 移除最后一个元素的右侧竖线 */
+  padding-right: 0; /* 移除最后一个元素的右侧填充 */
+  margin-right: 0; /* 移除最后一个元素的右侧外边距 */
+}
+
+/* jump_last区域直接子元素a标签样式 */
+.jump_last > a {
+  position: relative; /* 相对定位 */
+  top: -16px; /* 顶部偏移 */
+  left: 810px; /* 左侧偏移 */
+}
+
+/* jump_last超链接悬停效果 */
+.jump_last a:hover {
+  color: grey; /* 悬停时文本颜色变为灰色 */
+}
+
+/* jump_6区域jump_list图片样式 */
+.jump_6 .jump_list img {
+  /* 针对 jump_6 中的图片 */
+  width: 30px; /* 设置图片宽度 */
+  height: 30px; /* 设置图片高度 */
+  object-fit: contain; /* 保持图片比例 */
+}
+
+/* jump6区域jump_list样式 */
+.jump6 > .jump_list {
+  display: inline-block; /* 行内块显示 */
+}

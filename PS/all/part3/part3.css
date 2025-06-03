@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.part3_main{
+  background-color: #000;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+}
+
+.tab.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  width: calc(20% - 16px);
+  /* 每行显示5张图（减去gap） */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .card {
+      width: calc(25% - 16px);
+      /* 每行显示4张图 */
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+      width: calc(33.33% - 16px);
+      /* 每行显示3张图 */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+      width: calc(50% - 16px);
+      /* 每行显示2张图 */
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+      width: 100%;
+      /* 每行显示1张图 */
+  }
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  /* 添加过渡效果 */
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card.dimmed img {
+  opacity: 0.5;
+}
